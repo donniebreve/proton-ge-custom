@@ -1,6 +1,11 @@
 name: _job_build
 
 on:
+  workflow_dispatch:
+    inputs:
+      name:
+        required: true
+        type: string
   workflow_call:
     inputs:
       name:
